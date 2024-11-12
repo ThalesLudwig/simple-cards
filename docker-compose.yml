@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  joker-api:
+    build:
+      context: ./joker-api
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
+  joker-web:
+    build:
+      context: ./joker-web
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"

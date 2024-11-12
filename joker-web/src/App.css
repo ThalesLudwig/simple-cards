@@ -1,0 +1,26 @@
+body {
+  padding: 20px;
+  background-color: ghostwhite;
+}
+
+.info-row {
+  align-items: center;
+}
+
+.json-card {
+  background-color: #1D1F21;
+}
+
+.json-card-content {
+  overflow-y: auto;
+  max-height: 300px;
+  padding: 0 !important;
+}
+
+.action-button {
+  flex: 1;
+}
+
+.right {
+  align-self: flex-end;
+}

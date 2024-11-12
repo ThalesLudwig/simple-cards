@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Stack gap="20px" sx={{ mx: { xs: 0, lg: '300px' } }}>
-      <Typography variant="h4">Riot Blackjack</Typography>
+      <Typography variant="h4">Simple Blackjack</Typography>
       <Stack direction="row" gap="20px" className="info-row">
         <TextField
           label="Total Cash"
@@ -66,7 +66,7 @@ function App() {
           </Stack>
           <Alert
             icon={<InfoIcon fontSize="inherit" />}
-            severity={dealerCount > count && dealerCount < 21 ? "error" : "success"}
+            severity={(dealerCount > count && dealerCount < 21) || count > 21 ? "error" : "success"}
           >
             {JSON.parse(response).message}
           </Alert>

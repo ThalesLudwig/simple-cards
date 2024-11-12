@@ -1,8 +1,8 @@
-FROM node:16-alpine
+FROM node:21
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN yarn install
 COPY . .
 EXPOSE 5173
 

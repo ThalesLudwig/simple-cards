@@ -24,7 +24,8 @@
 - Exposes the port 5173.
 
 ### Running
-`docker compose up`
+- `docker compose up`
+- Open the interface on http://localhost:5173/
 
 ### Endpoints
 - Base endpoint: `/blackjack`
